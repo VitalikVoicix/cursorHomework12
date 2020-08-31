@@ -49,6 +49,7 @@ h1{
     font-size:150px;
     font-family:fantasy;
     text-align: center;
+    text-shadow: 10px 10px 30px #DFDDE1;
 }
 .box{
     height: 500px;
