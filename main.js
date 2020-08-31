@@ -34,6 +34,7 @@ for(let i = 0;i<heroes.length;i++){
     box.appendChild(pers);
 
   });    
+
 }
  btn.disabled = true;
  }
@@ -45,7 +46,9 @@ const showPlanet = document.querySelector(".planets");
 const squarePlanets = document.getElementById("showPlanet");
 
 const prevBtn = document.getElementById("prev");
+prevBtn.disabled=true;
 const nextBtn = document.getElementById("next");
+nextBtn.disabled=true;
 
 const baseURL = "http://swapi.dev/api/"
 const root = (url) =>
@@ -70,6 +73,9 @@ showPlanet.addEventListener("click", () => {
     });
   });
  
+  prevBtn.disabled=false;
+  nextBtn.disabled=false;
+
 });
 nextBtn.addEventListener("click", () => {
   if (page >5) {
